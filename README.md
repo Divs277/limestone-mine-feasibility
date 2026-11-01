@@ -4,8 +4,13 @@ I'm a second-year mining engineering student. This project asks one question: wo
 
 I estimate how much material must be moved and how many trucks that needs, then build a discounted cash flow model in Python that gives NPV, IRR and payback. A sensitivity analysis shows which inputs matter most. All inputs are in `data/assumptions.csv`.
 
-## Status
-Work in progress. The model runs, and I am replacing the starting assumptions with values from public sources.
+## Results (base case)
+- NPV at 12%: about ₹16 crore, IRR 15.7%, payback 5.7 years
+- Fleet: 6 trucks for about 5,000 t/day of material
+- Biggest risk: limestone price. Break-even price is about ₹555/t, only about 7% below the base case of ₹595/t
+- Recommendation: conditional go (see `memo.md`)
+
+![Sensitivity chart](tornado.png)
 
 ## What's in the repo
 - `data/assumptions.csv`: every input with its unit and source (edit this, not the code)
